@@ -1,0 +1,81 @@
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #292524;
+  background-color: #fffaf3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --primary: #c2410c;
+  --primary-dark: #9a3412;
+  --primary-light: #fff7ed;
+  --surface: #ffffff;
+  --background: #fffaf3;
+  --text: #292524;
+  --text-muted: #625b55;
+  --border: #e7ded5;
+  --focus: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background-color: var(--background);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+
+  background-color: #fffaf3;
+  background-image:
+    radial-gradient(circle at 10% 10%, rgb(251 146 60 / 25%), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgb(253 186 116 / 22%), transparent 30%),
+    radial-gradient(
+      circle at 50% 100%,
+      rgb(254 215 170 / 30%),
+      transparent 35%
+    ),
+    radial-gradient(rgb(194 65 12 / 8%) 1px, transparent 1px),
+    linear-gradient(135deg, #fffaf3 0%, #fff4e6 50%, #fff7ed 100%);
+
+  background-size:
+    auto,
+    auto,
+    auto,
+    24px 24px,
+    auto;
+
+  background-attachment: fixed;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
